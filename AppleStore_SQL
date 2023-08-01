@@ -1,3 +1,5 @@
+--These codes will analyze the Apple Store data, resulting in clean data, analysis, and recommendations at the end.
+
 CREATE TABLE appleStore_description_combined AS
 
 SELECT * FROM appleStore_description1
@@ -95,6 +97,20 @@ on a.id = b.id
 
 GROUP by description_length_bucket
 order by average_rating DESC
+
+-- Recommendation 
+--1.Paid apps tend to receive better ratings for various reasons, notably because they have the financial 
+--resources to enhance the customer experience and implement additional improvements.
+--2.The number of languages available does not always correlate with an increase in the rating.
+--3.Apps with longer descriptions often receive better ratings due to customers might want to know the app's purpose and how to use it effectively.
+
+
+
+
+
+
+
+
 
 
 
